@@ -2,8 +2,11 @@
   "ExpandedNodes": [
     "",
     "\\src",
-    "\\src\\views"
+    "\\src\\components",
+    "\\src\\pages",
+    "\\src\\plugins",
+    "\\src\\services"
   ],
-  "SelectedNode": "\\src\\views\\HomeView.vue",
+  "SelectedNode": "\\yarn.lock",
   "PreviewInSolutionExplorer": false
 }
