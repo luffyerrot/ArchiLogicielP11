@@ -2,16 +2,19 @@
   "name": "mh-front",
   "version": "0.0.0",
   "scripts": {
-    "dev": "vite",
+    "serve": "vite",
     "build": "vue-tsc --noEmit && vite build",
     "preview": "vite preview",
+    "test": "vitest",
     "lint": "eslint . --fix --ignore-path .gitignore"
   },
   "dependencies": {
     "@mdi/font": "7.4.47",
     "axios": "^1.7.7",
     "core-js": "^3.37.1",
+    "dayjs": "^1.11.13",
     "roboto-fontface": "*",
+    "vitest": "^2.1.4",
     "vue": "^3.4.31",
     "vue-router": "^4.4.5",
     "vuetify": "^3.6.11"

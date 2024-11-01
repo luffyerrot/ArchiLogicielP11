@@ -18,7 +18,5 @@ export function registerPlugins (app: App) {
     .use(vuetify)
     .use(router)
     .use(pinia)
-    .use(axios, {
-      baseURL: 'http://localhost:8080/mh-api/'
-    })
+    .use(axios)
 }
