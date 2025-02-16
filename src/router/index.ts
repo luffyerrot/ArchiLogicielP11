@@ -5,13 +5,15 @@
  */
 
 // Composables
-import { createRouter, createWebHistory } from 'vue-router/auto'
+import { createMemoryHistory, createRouter, createWebHistory } from 'vue-router/auto'
 import { setupLayouts } from 'virtual:generated-layouts'
 import { routes } from 'vue-router/auto-routes'
 import { useUserStore } from '@/stores/user'
 
+const isServer = typeof window === 'undefined';
+
 const router = createRouter({
-  history: createWebHistory(import.meta.env.BASE_URL),
+  history: isServer ? createMemoryHistory(import.meta.env.BASE_URL) : createWebHistory(import.meta.env.BASE_URL),
   routes: [
     ...setupLayouts(routes),
     { path: '/home', redirect: '/' },

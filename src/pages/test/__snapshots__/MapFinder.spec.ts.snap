@@ -1,0 +1,34 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Page de connexion > Bon affichage de la page 1`] = `
+"<div data-v-fb44f027="" class="v-card v-theme--light v-card--density-default v-card--variant-elevated mx-auto px-6 py-8 mt-4" style="max-width: 800px;">
+  <!---->
+  <div class="v-card__loader">
+    <div class="v-progress-linear v-theme--light v-locale--is-ltr" style="top: 0px; height: 0px; --v-progress-linear-height: 2px;" role="progressbar" aria-hidden="true" aria-valuemin="0" aria-valuemax="100">
+      <!---->
+      <div class="v-progress-linear__background"></div>
+      <div class="v-progress-linear__buffer" style="width: 0%;"></div>
+      <transition-stub name="fade-transition" appear="false" persisted="false" css="true">
+        <div class="v-progress-linear__indeterminate">
+          <div class="v-progress-linear__indeterminate long"></div>
+          <div class="v-progress-linear__indeterminate short"></div>
+        </div>
+      </transition-stub>
+      <!---->
+    </div>
+  </div>
+  <!---->
+  <!---->
+  <div data-v-d05fc6bc="" data-v-fb44f027="" style="width: 100%; height: 500px;">
+    <div data-v-d05fc6bc="" class="mapdiv"></div>
+    <!---->
+  </div><button data-v-fb44f027="" type="button" class="v-btn v-btn--elevated v-theme--light v-btn--density-default v-btn--size-default v-btn--variant-elevated"><span class="v-btn__overlay"></span><span class="v-btn__underlay"></span>
+    <!----><span class="v-btn__content" data-no-activator="">Chercher</span>
+    <!---->
+    <!---->
+  </button>
+  <!---->
+  <!----><span class="v-card__underlay"></span>
+</div>
+<!--v-if-->"
+`;

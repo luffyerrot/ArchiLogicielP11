@@ -1,8 +1,6 @@
 <template>
-    <ConnexionForm
-        :register="true"
-    />
+    <ConnexionForm :register="true" />
 </template>
-  
+
 <script setup lang="ts">
 </script>

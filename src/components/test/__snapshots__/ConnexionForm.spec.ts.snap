@@ -1,0 +1,6 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Formulaire de connexion / enregistrement > Bon affichage de la page 1`] = `
+"<h1 data-v-e95e7a8d="" class="message">Connexion</h1>
+<v-card-stub data-v-e95e7a8d="" class="mx-auto px-6 py-8 mt-4" maxwidth="344" disabled="false" flat="false" hover="false" ripple="true" border="false" density="default" loading="false" tile="false" replace="false" exact="false" tag="div" variant="elevated"></v-card-stub>"
+`;

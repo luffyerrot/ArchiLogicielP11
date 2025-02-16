@@ -1,0 +1,6 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Barre du header > Bon affichage de la page 1`] = `
+"<v-app-bar-stub data-v-d1b168af="" modelvalue="true" location="top" absolute="false" collapse="false" density="default" extended="false" extensionheight="48" flat="false" floating="false" height="64" border="false" tile="false" tag="header" order="0" scrollthreshold="300"></v-app-bar-stub>
+<v-navigation-drawer-stub data-v-d1b168af="" disableresizewatcher="false" disableroutewatcher="false" expandonhover="false" floating="false" modelvalue="false" permanent="false" railwidth="56" scrim="true" temporary="true" persistent="false" touchless="false" width="256" location="start" sticky="false" border="false" order="0" absolute="false" tile="false" tag="nav"></v-navigation-drawer-stub>"
+`;

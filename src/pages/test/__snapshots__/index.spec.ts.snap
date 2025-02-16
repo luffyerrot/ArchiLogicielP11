@@ -1,0 +1,9 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Page home > Bon affichage de la page 1`] = `
+"<h1 data-v-d1d3d0d7="" class="message ma-4">Bienvenue sur le service de recherche MedHead</h1>
+<div data-v-d1d3d0d7="">
+  <p data-v-d1d3d0d7="" class="message ma-4" style="color: red;">Erreur lors de la récupération des groupes de spécialités</p>
+</div>
+<v-container-stub data-v-d1d3d0d7="" fluid="false" tag="div"></v-container-stub>"
+`;

@@ -1,0 +1,3 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Footer > Bon affichage de la page 1`] = `"<v-footer-stub data-v-6704560a="" elevation="6" app="true" height="60" border="false" order="0" absolute="false" tile="false" tag="footer"></v-footer-stub>"`;

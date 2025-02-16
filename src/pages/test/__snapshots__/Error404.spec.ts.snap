@@ -1,0 +1,3 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Page 404 > Bon affichage de la page 1`] = `"<v-card-stub data-v-d27eadc0="" class="mx-auto px-6 py-8 mt-4 message" maxwidth="800" disabled="false" flat="false" hover="false" ripple="true" border="false" density="default" loading="false" tile="false" replace="false" exact="false" tag="div" variant="elevated"></v-card-stub>"`;

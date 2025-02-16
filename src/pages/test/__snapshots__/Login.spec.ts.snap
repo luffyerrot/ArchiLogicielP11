@@ -1,0 +1,3 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Page de connexion > Bon affichage de la page 1`] = `"<connexion-form-stub register="false"></connexion-form-stub>"`;
