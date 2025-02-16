@@ -18,9 +18,9 @@ import { PointDto } from '@/types';
 import { GoogleMap, Polyline } from 'vue3-google-map'
 
 const msgFindError: Ref<string | null> = ref(null);
-const mapCenter = { lat: 47.36888117749755, lng: -0.49352569804404806 };
-const apiKey = 'AIzaSyB86d0Y3Drd6HxhN2aYDI-hnkLf6rw1WmE';
-const origin: PointDto = { latitude: 47.35866413146318, longitude: -0.5505390654434574 }
+const mapCenter = { lat: 51.5049471134457, lng: -0.12220663332819873 };
+const apiKey = import.meta.env.GOOGLE_MAP_API_KEY;
+const origin: PointDto = { latitude: 51.502587948674886, longitude: -0.1412188474474401 }
 const route = useRoute();
 const targetLatitude: Ref<number | undefined> = ref(+(route.query.latitude as string));
 const targetLongitude: Ref<number | undefined> = ref(+(route.query.longitude as string));

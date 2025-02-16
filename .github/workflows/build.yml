@@ -14,4 +14,5 @@ jobs:
       - name: SonarQube Scan
         uses: SonarSource/sonarqube-scan-action@v4
         env:
+          GOOGLE_MAP_API_KEY: ${{ secrets.GOOGLE_MAP_API_KEY }}
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
