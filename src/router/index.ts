@@ -8,10 +8,24 @@
 import { createRouter, createWebHistory } from 'vue-router/auto'
 import { setupLayouts } from 'virtual:generated-layouts'
 import { routes } from 'vue-router/auto-routes'
+import { useUserStore } from '@/stores/user'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
-  routes: setupLayouts(routes),
+  routes: [
+    ...setupLayouts(routes),
+    { path: '/home', redirect: '/' },
+    { path: '/:pathMatch(.*)*', redirect: '/error404' }
+  ],
+})
+
+router.beforeEach(to => {
+  const user = useUserStore();
+  if (!user.isLogged()) {
+    if (to.name !== '/' && to.name !== '/Login' && to.name !== '/Register' && to.name !== '/Error404') {
+      router.push('/login');
+    }
+  }
 })
 
 // Workaround for https://github.com/vitejs/vite/issues/11804

@@ -10,6 +10,7 @@ import Vuetify, { transformAssetUrls } from 'vite-plugin-vuetify'
 // Utilities
 import { defineConfig } from 'vite'
 import { fileURLToPath, URL } from 'node:url'
+import vitePluginRequire from 'vite-plugin-require'
 
 // https://vitejs.dev/config/
 export default defineConfig({
@@ -70,5 +71,19 @@ export default defineConfig({
   },
   server: {
     port: 3000,
-  },
+    proxy: {
+      '/api': {
+        target: 'http://localhost:8080',
+        changeOrigin: true,
+        secure: false,
+        ws: false
+      },
+      '/user': {
+        target: 'http://localhost:8081',
+        changeOrigin: true,
+        secure: false,
+        ws: false
+      }
+    }
+  }
 })
