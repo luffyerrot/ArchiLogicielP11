@@ -1,13 +1,11 @@
 FROM node:lts-alpine
 
-# installe un simple serveur http pour servir un contenu statique
-RUN yarn global add http-server
-
 # définit le dossier 'app' comme dossier de travail
 WORKDIR /app
 
-# copie 'package.json' et 'package-lock.json' (si disponible)
-COPY package*.json ./
+# copie 'package.json' et 'yarn.lock' (si disponible)
+COPY package.json ./
+COPY yarn.lock ./
 
 # installe les dépendances du projet
 RUN yarn install
@@ -20,4 +18,4 @@ RUN yarn run build
 
 EXPOSE 3000
 
-CMD [ "http-server", "dist" ]
+CMD [ "yarn", "serve", "--port=3000" ]
