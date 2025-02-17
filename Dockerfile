@@ -18,4 +18,4 @@ RUN yarn run build
 
 EXPOSE 3000
 
-CMD [ "yarn", "serve", "--port=3000" ]
+CMD [ "yarn", "serve" ]
