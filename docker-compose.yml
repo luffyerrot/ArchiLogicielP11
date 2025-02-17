@@ -1,0 +1,12 @@
+services:
+    medhead_ihm:
+        image: pierre9820/medhead-ihm:latest
+        container_name: medhead-ihm
+        restart: always
+        environment:
+            - GOOGLE_MAP_API_KEY=AIzaSyB86d0Y3Drd6HxhN2aYDI-hnkLf6rw1WmE
+        ports:
+            - '3000:3000'
+        volumes:
+            - ./:/app
+        command: yarn serve
