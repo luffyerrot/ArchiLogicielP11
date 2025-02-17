@@ -19,7 +19,7 @@ jobs:
       - name: Build a Docker Image
         uses: docker/build-push-action@v6
         with:
-          context: .
+          context: ./home/runner/work/ArchiLogicielP11Front/ArchiLogicielP11Front
           dockerfile: Dockerfile
           push: false
           tags: ${{ secrets.DOCKER_USERNAME }}/medhead-ihm:latest
