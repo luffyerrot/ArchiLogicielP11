@@ -6,8 +6,8 @@ services:
         environment:
             - GOOGLE_MAP_API_KEY=AIzaSyB86d0Y3Drd6HxhN2aYDI-hnkLf6rw1WmE
         ports:
-            - '4173'
+            - '8082:8080'
         volumes:
             - '.:/app'
             - '/app/node_modules'
-        command: yarn serve
+        command: yarn serve --port=8082
