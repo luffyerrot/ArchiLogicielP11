@@ -1,8 +1,5 @@
 FROM node:lts-alpine
 
-# installe un simple serveur http pour servir un contenu statique
-RUN yarn global add http-server
-
 # définit le dossier 'app' comme dossier de travail
 WORKDIR /app
 
@@ -18,6 +15,6 @@ COPY . .
 # construit l'app pour la production en la minifiant
 RUN yarn run build
 
-EXPOSE 8080
+EXPOSE 4173:80
 
 CMD [ "yarn", "serve" ]
