@@ -18,6 +18,6 @@ COPY . .
 # construit l'app pour la production en la minifiant
 RUN yarn run build
 
-EXPOSE 3000
+EXPOSE 8080
 
-CMD [ "http-server", "dist" ]
+CMD [ "yarn", "serve" ]

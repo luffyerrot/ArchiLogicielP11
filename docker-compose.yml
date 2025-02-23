@@ -6,10 +6,8 @@ services:
         environment:
             - GOOGLE_MAP_API_KEY=AIzaSyB86d0Y3Drd6HxhN2aYDI-hnkLf6rw1WmE
         ports:
-            - '3000:3000'
+            - '8082:8080'
         volumes:
-            - ./:/app
-            - node_modules:/app/node_modules
-volumes:
-  pgdata: {}
-  node_modules: {}
+            - '.:/app'
+            - '/app/node_modules'
+        command: yarn serve
